@@ -5,12 +5,9 @@ require('dotenv').config();
 
 const {
   API_URL_KEY, 
-  API_RINKEBY_KEY, 
   PRIVATE_KEY, 
-  ETHERSCAN_APIKEY, 
   POLYGONSCAN_APIKEY,
   POLYGON_URL,
-  ASTAR_URL 
 } = process.env;
 
 const GWEI = 1000 * 1000;
@@ -33,11 +30,6 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.0",
-  /*
-  etherscan: {
-    apiKey: ETHERSCAN_APIKEY
-  },
-  */
   paths: {                         
     artifacts: './../frontend/src/contracts',  
   },
